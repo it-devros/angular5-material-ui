@@ -83,10 +83,17 @@ export class MaterialModule {}
 
 @NgModule({
   imports: [
-      RouterModule.forRoot(AppRoutes),
+    CommonModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    RouterModule.forRoot(AppRoutes),
+    HttpModule,
+    MaterialModule,
+    MatNativeDateModule,
   ],
   declarations: [
-      AuthLayoutComponent
+    AppComponent,
+    AuthLayoutComponent
   ],
   bootstrap: [ AppComponent ]
 })

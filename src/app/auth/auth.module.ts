@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { PagesRoutes } from './pages.routing';
+import { AuthRoutes } from './auth.routing';
 
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
@@ -13,7 +13,7 @@ import { LoginComponent } from './login/login.component';
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(PagesRoutes),
+    RouterModule.forChild(AuthRoutes),
     FormsModule,
     ReactiveFormsModule
   ],
@@ -23,4 +23,4 @@ import { LoginComponent } from './login/login.component';
   ]
 })
 
-export class PagesModule {}
+export class AuthModule {}
