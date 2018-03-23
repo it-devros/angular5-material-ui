@@ -1,7 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+declare var $: any;
 
 @Component({
-  selector: 'app-root',
-  template: `<app-home></app-home>`
+    selector: 'app-my-app',
+    templateUrl: './app.component.html'
 })
-export class AppComponent { }
+
+export class AppComponent implements OnInit {
+
+    constructor() {}
+
+    ngOnInit() {
+        $.material.init();
+    }
+}

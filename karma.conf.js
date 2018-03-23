@@ -1,50 +1,44 @@
-const path = require('path');
+// Karma configuration file, see link for more information
+// https://karma-runner.github.io/0.13/config/configuration-file.html
 
-module.exports = (config) => {
-  const webpackConfig = require('./webpack/webpack.test.js')({ env: 'test' });
-
-  const configuration = {
-    basePath: '.',
-    frameworks: ['jasmine'],
-    exclude: [],
-    files: [
-      { pattern: './src/specs.js', watched: false },
-      { pattern: './src/assets/**/*', watched: false, included: false, served: true, nocache: false },
-      { pattern: './public/**/*', watched: false, included: false, served: true, nocache: false }
-    ],
+module.exports = function (config) {
+  config.set({
+    basePath: '',
+    frameworks: ['jasmine', '@angular/cli'],
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
-      require('karma-webpack'),
-      require('karma-spec-reporter')
+      require('karma-jasmine-html-reporter'),
+      require('karma-coverage-istanbul-reporter'),
+      require('@angular/cli/plugins/karma')
     ],
-    preprocessors: { './src/specs.js': ['webpack'] },
-    webpack: webpackConfig,
-    webpackMiddleware: {
-      noInfo: true,
-      stats: {
-        chunks: false
-      }
+    client:{
+      clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
-    reporters: ['spec'],
-    specReporter: {
-      maxLogLines: 5,
-      suppressErrorSummary: false,
-      suppressFailed: false,
-      suppressPassed: false,
-      suppressSkipped: true,
-      showSpecTiming: true
+    files: [
+      { pattern: './src/test.ts', watched: false }
+    ],
+    preprocessors: {
+      './src/test.ts': ['@angular/cli']
     },
+    mime: {
+      'text/x-typescript': ['ts','tsx']
+    },
+    coverageIstanbulReporter: {
+      reports: [ 'html', 'lcovonly' ],
+      fixWebpackSourcePaths: true
+    },
+    angularCli: {
+      environment: 'dev'
+    },
+    reporters: config.angularCli && config.angularCli.codeCoverage
+              ? ['progress', 'coverage-istanbul']
+              : ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
-    logLevel: config.LOG_ERROR,
-    autoWatch: false,
+    logLevel: config.LOG_INFO,
+    autoWatch: true,
     browsers: ['Chrome'],
-    mime: { 'text/x-typescript': ['ts', 'tsx'] },
-    singleRun: true,
-    concurrency: 1,
-    browserNoActivityTimeout: 10000
-  };
-
-  config.set(configuration);
+    singleRun: false
+  });
 };
