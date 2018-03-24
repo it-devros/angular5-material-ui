@@ -9,6 +9,10 @@ import { AuthRoutes } from './auth.routing';
 
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { ConfirmComponent } from './confirm/confirm.component';
+import { ResetComponent } from './reset/reset.component';
+import { FooterComponent } from './footer/footer.component';
+import { PasswordComponent } from './password/password.component';
 
 @NgModule({
   imports: [
@@ -19,7 +23,11 @@ import { LoginComponent } from './login/login.component';
   ],
   declarations: [
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ConfirmComponent,
+    ResetComponent,
+    FooterComponent,
+    PasswordComponent,
   ]
 })
 
