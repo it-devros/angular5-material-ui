@@ -17,6 +17,9 @@ export const AppRoutes: Routes = [
     children: [{
       path: 'pricing',
       loadChildren: './pricing/pricing.module#PricingModule'
+    }, {
+      path: 'employees',
+      loadChildren: './employees/employees.module#EmployeesModule'
     }]
   }
 ];

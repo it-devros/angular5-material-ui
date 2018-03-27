@@ -43,7 +43,6 @@ import { AppComponent } from './app.component';
 
 import { AuthLayoutComponent } from './layouts/auth/auth-layout.component';
 import { SidebarModule } from './sidebar/sidebar.module';
-import { FooterModule } from './shared/footer/footer.module';
 import { NavbarModule } from './shared/navbar/navbar.module';
 import { FixedpluginModule } from './shared/fixedplugin/fixedplugin.module';
 import { AdminLayoutComponent } from './layouts/admin/admin-layout.component';
@@ -97,7 +96,6 @@ export class MaterialModule {}
     MaterialModule,
     MatNativeDateModule,
     SidebarModule,
-    FooterModule,
     NavbarModule,
     FixedpluginModule
   ],
