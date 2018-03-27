@@ -44,7 +44,6 @@ import { AppComponent } from './app.component';
 import { AuthLayoutComponent } from './layouts/auth/auth-layout.component';
 import { SidebarModule } from './sidebar/sidebar.module';
 import { NavbarModule } from './shared/navbar/navbar.module';
-import { FixedpluginModule } from './shared/fixedplugin/fixedplugin.module';
 import { AdminLayoutComponent } from './layouts/admin/admin-layout.component';
 
 import { AppRoutes } from './app.routing';
@@ -96,8 +95,7 @@ export class MaterialModule {}
     MaterialModule,
     MatNativeDateModule,
     SidebarModule,
-    NavbarModule,
-    FixedpluginModule
+    NavbarModule
   ],
   declarations: [
     AppComponent,
