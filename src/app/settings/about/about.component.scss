@@ -1,0 +1,28 @@
+
+#about_page {
+	.p-b-15 {
+		padding-bottom: 15px;
+	}
+	.map {
+		height: 500px;
+	}
+	.flexing {
+		display: flex;
+	}
+	.icon {
+		padding: 5px;
+		i {
+			color: #d81b60;
+			text-align: center;
+			font-size: 55px;
+	    border: 1px solid #E5E5E5;
+	    border-radius: 50%;
+	    width: 130px;
+	    line-height: 130px;
+	    height: 130px;
+		}
+	}
+	.f-bold {
+		font-weight: bold;
+	}
+}

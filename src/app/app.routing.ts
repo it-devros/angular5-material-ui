@@ -20,6 +20,9 @@ export const AppRoutes: Routes = [
     }, {
       path: 'employees',
       loadChildren: './employees/employees.module#EmployeesModule'
+    }, {
+      path: 'settings',
+      loadChildren: './settings/settings.module#SettingsModule'
     }]
   }
 ];

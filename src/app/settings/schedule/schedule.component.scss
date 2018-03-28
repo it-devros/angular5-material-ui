@@ -1,0 +1,39 @@
+
+#schedule_page {
+	h3 {
+		font-weight: bold;
+		color: #e91e63;
+	}
+	.f-custom {
+		font-weight: bold;
+		color: #e91e63;
+	}
+	.btn-custom {
+		background-color: white;
+		color: gray;
+		border: 1px solid #e91e63;
+	}
+	.btn-custom-d {
+		background-color: white;
+		color: gray;
+		border: 1px solid gray;
+	}
+	.btn-rounded {
+		border-radius: 50%;
+	}
+	.f-bold {
+		font-weight: bold;
+	}
+	.f-h {
+		color: #e91e63;
+	}
+	.inline-me {
+		.form-group {
+			margin-top: 0px;
+			input {
+				padding-top: 0px;
+				padding-bottom: 0px;
+			}
+		}
+	}
+}

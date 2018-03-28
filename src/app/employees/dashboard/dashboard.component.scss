@@ -10,10 +10,6 @@
 	.flexing {
 		display: flex;
 	}
-	.btn_add {
-    margin: auto;
-    margin-right: 0px;
-	}
 	.p-b-30 {
 		padding-bottom: 30px;
 	}
@@ -40,10 +36,28 @@
 		margin-bottom: 0px;	
 		box-shadow: none;
 		-webkit-box-shadow: none;
-		.card-content {
-			padding-right: 0px;
-			padding-left: 0px;
-			padding-bottom: 0px;
-		}
 	}
+	.card-content {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.title {
+		position: absolute;
+	}
+	.card-title {
+		display: inline;
+	}
+	.category {
+		display: inline;
+	}
+	.inline {
+		display: inline;
+	}
+	.material-datatables {
+		width: 100%;
+	}
+	.btn_add {
+		margin: 0px;
+	}
+
 }
