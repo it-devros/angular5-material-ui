@@ -40,9 +40,13 @@ import {
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
-import { AppRoutes } from './app.routing';
 
 import { AuthLayoutComponent } from './layouts/auth/auth-layout.component';
+import { SidebarModule } from './sidebar/sidebar.module';
+import { NavbarModule } from './shared/navbar/navbar.module';
+import { AdminLayoutComponent } from './layouts/admin/admin-layout.component';
+
+import { AppRoutes } from './app.routing';
 
 @NgModule({
   exports: [
@@ -83,10 +87,20 @@ export class MaterialModule {}
 
 @NgModule({
   imports: [
-      RouterModule.forRoot(AppRoutes),
+    CommonModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    RouterModule.forRoot(AppRoutes),
+    HttpModule,
+    MaterialModule,
+    MatNativeDateModule,
+    SidebarModule,
+    NavbarModule
   ],
   declarations: [
-      AuthLayoutComponent
+    AppComponent,
+    AuthLayoutComponent,
+    AdminLayoutComponent
   ],
   bootstrap: [ AppComponent ]
 })

@@ -5,22 +5,24 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { PagesRoutes } from './pages.routing';
+import { SettingsRoutes } from './settings.routing';
 
-import { RegisterComponent } from './register/register.component';
-import { LoginComponent } from './login/login.component';
+import { AboutComponent } from './about/about.component';
+import { ScheduleComponent } from './schedule/schedule.component';
+import { CheckboxesComponent } from './checkboxes/checkboxes.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(PagesRoutes),
+    RouterModule.forChild(SettingsRoutes),
     FormsModule,
     ReactiveFormsModule
   ],
   declarations: [
-    LoginComponent,
-    RegisterComponent
+    AboutComponent,
+    ScheduleComponent,
+    CheckboxesComponent
   ]
 })
 
-export class PagesModule {}
+export class SettingsModule {}
