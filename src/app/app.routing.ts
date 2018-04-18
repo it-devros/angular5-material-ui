@@ -23,6 +23,9 @@ export const AppRoutes: Routes = [
     }, {
       path: 'settings',
       loadChildren: './settings/settings.module#SettingsModule'
+    }, {
+      path: 'beach_menu',
+      loadChildren: './menu/menu.module#MenuModule'
     }]
   }
 ];
