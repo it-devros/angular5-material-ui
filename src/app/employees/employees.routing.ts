@@ -1,6 +1,6 @@
-import { Routes } from '@angular/router';
+import { Routes } from '@angular/router'
 
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard.component'
 
 export const EmployeesRoutes: Routes = [
   {
@@ -10,4 +10,4 @@ export const EmployeesRoutes: Routes = [
         component: DashboardComponent
     }]
   }
-];
+]

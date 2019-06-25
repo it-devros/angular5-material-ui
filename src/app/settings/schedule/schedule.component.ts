@@ -1,20 +1,20 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core'
 
-declare var $: any;
+declare var $: any
 
 @Component({
-	selector: 'app-settings-schedule-cmp',
-	templateUrl: './schedule.component.html',
-	styleUrls: ['./schedule.component.scss'],
+  selector: 'app-settings-schedule-cmp',
+  templateUrl: './schedule.component.html',
+  styleUrls: ['./schedule.component.scss'],
 })
 
 export class ScheduleComponent implements OnInit {
 
-	constructor() {
-		
-	}
+  constructor() {
+    
+  }
 
-	ngOnInit() {
+  ngOnInit() {
 
-	}
+  }
 }

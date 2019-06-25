@@ -1,14 +1,14 @@
-import { MdProAngularCliPage } from './app.po';
+import { MdProAngularCliPage } from './app.po'
 
 describe('md-pro-angular-cli App', () => {
-  let page: MdProAngularCliPage;
+  let page: MdProAngularCliPage
 
   beforeEach(() => {
-    page = new MdProAngularCliPage();
-  });
+    page = new MdProAngularCliPage()
+  })
 
   it('should display message saying app works', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
-  });
-});
+    page.navigateTo()
+    expect(page.getParagraphText()).toEqual('app works!')
+  })
+})

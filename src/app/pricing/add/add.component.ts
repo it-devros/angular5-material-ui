@@ -1,20 +1,20 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core'
 
-declare var $: any;
+declare var $: any
 
 @Component({
-	selector: 'app-pricing-add-cmp',
-	templateUrl: './add.component.html',
-	styleUrls: ['./add.component.scss'],
+  selector: 'app-pricing-add-cmp',
+  templateUrl: './add.component.html',
+  styleUrls: ['./add.component.scss'],
 })
 
 export class PricingAddComponent implements OnInit {
 
-	constructor() {
-		
-	}
+  constructor() {
+    
+  }
 
-	ngOnInit() {
+  ngOnInit() {
 
-	}
+  }
 }

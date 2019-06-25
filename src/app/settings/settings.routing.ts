@@ -1,8 +1,8 @@
-import { Routes } from '@angular/router';
+import { Routes } from '@angular/router'
 
-import { AboutComponent } from './about/about.component';
-import { ScheduleComponent } from './schedule/schedule.component';
-import { CheckboxesComponent } from './checkboxes/checkboxes.component';
+import { AboutComponent } from './about/about.component'
+import { ScheduleComponent } from './schedule/schedule.component'
+import { CheckboxesComponent } from './checkboxes/checkboxes.component'
 
 export const SettingsRoutes: Routes = [
   {
@@ -18,4 +18,4 @@ export const SettingsRoutes: Routes = [
         component: CheckboxesComponent
     }]
   }
-];
+]

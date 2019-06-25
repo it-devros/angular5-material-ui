@@ -1,9 +1,9 @@
-import { Component, OnInit, OnDestroy, ViewChild, HostListener, AfterViewInit } from '@angular/core';
-import { NavItem, NavItemType } from '../../md/md.module';
-import { NavbarComponent } from '../../shared/navbar/navbar.component';
-import PerfectScrollbar from 'perfect-scrollbar';
+import { Component, OnInit, OnDestroy, ViewChild, HostListener, AfterViewInit } from '@angular/core'
+import { NavItem, NavItemType } from '../../md/md.module'
+import { NavbarComponent } from '../../shared/navbar/navbar.component'
+import PerfectScrollbar from 'perfect-scrollbar'
 
-declare const $: any;
+declare const $: any
 
 @Component({
   selector: 'app-layout',
@@ -12,18 +12,18 @@ declare const $: any;
 })
 
 export class AdminLayoutComponent implements OnInit, AfterViewInit {
-    public navItems: NavItem[];
+    public navItems: NavItem[]
 
-    @ViewChild('sidebar') sidebar: any;
-    @ViewChild(NavbarComponent) navbar: NavbarComponent;
+    @ViewChild('sidebar') sidebar: any
+    @ViewChild(NavbarComponent) navbar: NavbarComponent
     constructor() {
     }
     ngOnInit() {
-        const elemMainPanel = <HTMLElement>document.querySelector('.main-panel');
-        const elemSidebar = <HTMLElement>document.querySelector('.sidebar .sidebar-wrapper');
+        const elemMainPanel = <HTMLElement>document.querySelector('.main-panel')
+        const elemSidebar = <HTMLElement>document.querySelector('.sidebar .sidebar-wrapper')
         if (window.matchMedia(`(min-width: 960px)`).matches && !this.isMac()) {
-            let ps = new PerfectScrollbar(elemMainPanel);
-            ps = new PerfectScrollbar(elemSidebar);
+            let ps = new PerfectScrollbar(elemMainPanel)
+            ps = new PerfectScrollbar(elemSidebar)
         }
         this.navItems = [
           { type: NavItemType.NavbarLeft, title: 'Dashboard', iconClass: 'fa fa-dashboard' },
@@ -72,25 +72,25 @@ export class AdminLayoutComponent implements OnInit, AfterViewInit {
             ]
           },
           { type: NavItemType.NavbarLeft, title: 'Log out' }
-        ];
+        ]
     }
     ngAfterViewInit() {
-        this.runOnRouteChange();
+        this.runOnRouteChange()
     }
     runOnRouteChange(): void {
       if (window.matchMedia(`(min-width: 960px)`).matches && !this.isMac()) {
-        const elemSidebar = <HTMLElement>document.querySelector('.sidebar .sidebar-wrapper');
-        const elemMainPanel = <HTMLElement>document.querySelector('.main-panel');
-        let ps = new PerfectScrollbar(elemMainPanel);
-        ps = new PerfectScrollbar(elemSidebar);
-        ps.update();
+        const elemSidebar = <HTMLElement>document.querySelector('.sidebar .sidebar-wrapper')
+        const elemMainPanel = <HTMLElement>document.querySelector('.main-panel')
+        let ps = new PerfectScrollbar(elemMainPanel)
+        ps = new PerfectScrollbar(elemSidebar)
+        ps.update()
       }
     }
     isMac(): boolean {
-        let bool = false;
+        let bool = false
         if (navigator.platform.toUpperCase().indexOf('MAC') >= 0 || navigator.platform.toUpperCase().indexOf('IPAD') >= 0) {
-            bool = true;
+            bool = true
         }
-        return bool;
+        return bool
     }
 }

@@ -1,7 +1,7 @@
-import { Routes } from '@angular/router';
+import { Routes } from '@angular/router'
 
-import { AuthLayoutComponent } from './layouts/auth/auth-layout.component';
-import { AdminLayoutComponent } from './layouts/admin/admin-layout.component';
+import { AuthLayoutComponent } from './layouts/auth/auth-layout.component'
+import { AdminLayoutComponent } from './layouts/admin/admin-layout.component'
 
 export const AppRoutes: Routes = [
   {
@@ -28,4 +28,4 @@ export const AppRoutes: Routes = [
       loadChildren: './menu/menu.module#MenuModule'
     }]
   }
-];
+]

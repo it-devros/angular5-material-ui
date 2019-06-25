@@ -1,20 +1,20 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core'
 
-declare var $: any;
+declare var $: any
 
 @Component({
-	selector: 'app-reset-cmp',
-	templateUrl: './reset.component.html',
-	styleUrls: ['./reset.component.scss'],
+  selector: 'app-reset-cmp',
+  templateUrl: './reset.component.html',
+  styleUrls: ['./reset.component.scss'],
 })
 
 export class ResetComponent implements OnInit {
 
-	constructor() {
-		
-	}
+  constructor() {
+    
+  }
 
-	ngOnInit() {
+  ngOnInit() {
 
-	}
+  }
 }

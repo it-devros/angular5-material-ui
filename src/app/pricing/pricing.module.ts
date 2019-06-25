@@ -1,13 +1,13 @@
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
-// import { MdIconModule, MdCardModule, MdInputModule, MdCheckboxModule, MdButtonModule } from '@angular/material';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-// import { FlexLayoutModule } from '@angular/flex-layout';
+import { NgModule } from '@angular/core'
+import { RouterModule } from '@angular/router'
+import { CommonModule } from '@angular/common'
+// import { MdIconModule, MdCardModule, MdInputModule, MdCheckboxModule, MdButtonModule } from '@angular/material'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+// import { FlexLayoutModule } from '@angular/flex-layout'
 
-import { PricingRoutes } from './pricing.routing';
+import { PricingRoutes } from './pricing.routing'
 
-import { PricingAddComponent } from './add/add.component';
+import { PricingAddComponent } from './add/add.component'
 
 @NgModule({
   imports: [

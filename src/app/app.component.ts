@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
-declare var $: any;
+declare var $: any
 
 @Component({
   selector: 'app-my-app',
@@ -12,6 +12,6 @@ export class AppComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-      $.material.init();
+      $.material.init()
   }
 }

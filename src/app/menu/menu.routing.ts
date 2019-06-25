@@ -1,6 +1,6 @@
-import { Routes } from '@angular/router';
+import { Routes } from '@angular/router'
 
-import { ViewComponent } from './view/view.component';
+import { ViewComponent } from './view/view.component'
 
 export const MenuRoutes: Routes = [
   {
@@ -10,4 +10,4 @@ export const MenuRoutes: Routes = [
         component: ViewComponent
     }]
   }
-];
+]

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-register-cmp',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class RegisterComponent implements OnInit {
-  test: Date = new Date();
+  test: Date = new Date()
   ngOnInit() {
   }
 }

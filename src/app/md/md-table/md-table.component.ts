@@ -1,8 +1,8 @@
-import {Component, Input, ChangeDetectionStrategy} from '@angular/core';
+import {Component, Input, ChangeDetectionStrategy} from '@angular/core'
 
 export interface TableData {
-  headerRow: string[];
-  dataRows: string[][];
+  headerRow: string[]
+  dataRows: string[][]
 }
 
 @Component({
@@ -12,16 +12,16 @@ export interface TableData {
 })
 export class MdTableComponent {
   @Input()
-  public title: string;
+  public title: string
 
   @Input()
-  public subtitle: string;
+  public subtitle: string
 
   @Input()
-  public cardClass: string;
+  public cardClass: string
 
   @Input()
-  public data: TableData;
+  public data: TableData
 
   constructor() { }
 }
